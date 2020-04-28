@@ -2,10 +2,12 @@ package com.sp20.ssu370.app.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -22,6 +24,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     private TextView textView;
     BottomNavigationView bottomNav;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +69,22 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
+        // reference toolbar in activity_profile
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //toolbar.inflateMenu(R.menu.toolbar);
+        setSupportActionBar(toolbar);
+        //getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setTitle("PawChat");
+        toolbar.setTitleTextColor(android.graphics.Color.WHITE);
+
     }
+    //creating the menu at the top
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar,menu);
+        return true;
+    }
+
     @Override
     protected void onStart() {
         super.onStart();
