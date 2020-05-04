@@ -1,22 +1,18 @@
 package com.sp20.ssu370.app.activities;
 
-import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
+
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
-import android.view.MenuItem;
+
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.sp20.ssu370.app.fragments.HomeFragment;
-import com.sp20.ssu370.app.fragments.MapFragment;
-import com.sp20.ssu370.app.fragments.MessageFragment;
-import com.sp20.ssu370.app.fragments.ProfileFragment;
+
 import com.sp20.ssu370.app.models.DefaultResponse;
 import com.sp20.ssu370.app.R;
 import com.sp20.ssu370.app.api.RetrofitClient;
@@ -24,6 +20,7 @@ import com.sp20.ssu370.app.storage.SharedPrefManager;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

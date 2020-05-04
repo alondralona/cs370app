@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 
 import com.sp20.ssu370.app.models.User;
+import androidx.fragment.app.FragmentActivity;
 
 
 public class SharedPrefManager {
