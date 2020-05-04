@@ -3,6 +3,7 @@ package com.sp20.ssu370.app.storage;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import androidx.fragment.app.FragmentActivity;
 
 import com.sp20.ssu370.app.models.User;
 

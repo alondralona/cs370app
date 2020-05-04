@@ -89,7 +89,6 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         if(!SharedPrefManager.getInstance(this).isLoggedIn()){
-
             Intent intent = new Intent(this,MainActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
@@ -97,8 +96,6 @@ public class ProfileActivity extends AppCompatActivity {
 
         }
     }
-
-
 
 
 }

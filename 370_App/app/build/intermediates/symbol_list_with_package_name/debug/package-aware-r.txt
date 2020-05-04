@@ -1538,6 +1538,7 @@ id line1
 id line3
 id listMode
 id list_item
+id logout
 id masked
 id message
 id middle
@@ -1622,6 +1623,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id settings
 id shortcut
 id showCustom
 id showHome
@@ -1675,6 +1677,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1827,6 +1830,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu bottom_navigation
+menu toolbar
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
