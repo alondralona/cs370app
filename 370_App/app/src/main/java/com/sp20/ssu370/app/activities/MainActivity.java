@@ -12,15 +12,22 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.sp20.ssu370.app.fragments.HomeFragment;
 import com.sp20.ssu370.app.fragments.MapFragment;
 import com.sp20.ssu370.app.fragments.MessageFragment;
 import com.sp20.ssu370.app.fragments.ProfileFragment;
 import com.sp20.ssu370.app.models.DefaultResponse;
+
+
+
 import com.sp20.ssu370.app.R;
 import com.sp20.ssu370.app.api.RetrofitClient;
+import com.sp20.ssu370.app.models.DefaultResponse;
 import com.sp20.ssu370.app.storage.SharedPrefManager;
+
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -93,8 +100,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
 
-
-
+    else{
+            Toast.makeText(MainActivity.this, "User Registered Successfully", Toast.LENGTH_LONG).show();
+        }
         /*User Registration using the api call*/
         Call<DefaultResponse> call = RetrofitClient
                 .getInstance()
@@ -104,6 +112,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         call.enqueue(new Callback<DefaultResponse>() {
             @Override
             public void onResponse(Call<DefaultResponse> call, Response<DefaultResponse> response) {
+
                 if (response.code() == 201) {
                     DefaultResponse dr = response.body();
                     Toast.makeText(MainActivity.this, dr.getMsg(), Toast.LENGTH_LONG).show();
@@ -118,11 +127,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
+
+
     }
     @Override
     public void onClick (View v){
         switch ((v.getId())) {
             case R.id.buttonRegister:
+
                 userSignUp();
                 break;
 

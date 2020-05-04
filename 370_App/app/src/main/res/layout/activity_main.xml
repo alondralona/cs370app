@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Authenticator App"
+        android:text="Paw Chat"
         android:textColor="#2196F3"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
