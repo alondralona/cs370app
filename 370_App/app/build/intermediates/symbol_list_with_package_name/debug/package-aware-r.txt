@@ -1389,6 +1389,7 @@ id BOTTOM_START
 id CTRL
 id FUNCTION
 id META
+id Post_text
 id SHIFT
 id SYM
 id TOP_END
@@ -1446,6 +1447,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_post
 id alertTitle
 id all
 id always
@@ -1490,10 +1492,13 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id details
+id details_text
 id dialog_button
 id dimensions
 id direct
 id disableHome
+id done_button
 id dropdown_menu
 id editTextEmail
 id editTextName
@@ -1538,6 +1543,7 @@ id line1
 id line3
 id listMode
 id list_item
+id logout
 id masked
 id message
 id middle
@@ -1593,6 +1599,9 @@ id password_toggle
 id peekHeight
 id percent
 id pin
+id post_date
+id post_date_text
+id post_title
 id progressBar
 id progress_circular
 id progress_horizontal
@@ -1622,6 +1631,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id settings
 id shortcut
 id showCustom
 id showHome
@@ -1675,6 +1685,8 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id title_text
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1755,7 +1767,9 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login
 layout activity_main
+layout activity_post_and_meets
 layout activity_profile
+layout activity_whats_happening
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1827,6 +1841,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu bottom_navigation
+menu toolbar
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description

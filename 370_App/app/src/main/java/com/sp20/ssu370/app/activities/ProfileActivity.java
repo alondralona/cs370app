@@ -90,7 +90,7 @@ public class ProfileActivity extends AppCompatActivity {
         super.onStart();
         if(!SharedPrefManager.getInstance(this).isLoggedIn()){
 
-            Intent intent = new Intent(this,MainActivity.class);
+            Intent intent = new Intent(this,PostAndMeets.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
 

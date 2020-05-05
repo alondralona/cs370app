@@ -1,7 +1,7 @@
-#Mon Apr 27 19:03:05 PDT 2020
-base.0=/Users/Jose/Desktop/cs370app/370_App/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+#Mon May 04 18:15:15 PDT 2020
+base.0=/Users/alanareyna/Desktop/PAW_CHAT/cs370app/370_App/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/Users/Jose/Desktop/cs370app/370_App/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.1=/Users/alanareyna/Desktop/PAW_CHAT/cs370app/370_App/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex

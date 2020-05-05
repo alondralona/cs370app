@@ -23,6 +23,8 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+        <activity android:name="com.sp20.ssu370.app.activities.WhatsHappening" />
+        <activity android:name="com.sp20.ssu370.app.activities.PostAndMeets" />
         <activity android:name="com.sp20.ssu370.app.activities.ProfileActivity" />
         <activity android:name="com.sp20.ssu370.app.activities.LoginActivity" />
         <activity android:name="com.sp20.ssu370.app.activities.MainActivity" >
